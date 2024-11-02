@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import Item from './components/Item';
 import { library } from './components/library';
 import Tabs from './components/Tabs';
+import { Image } from '@material-tailwind/react';
 
 function App() {
   const [fullMenu, setFullMenu] = useState([]);
@@ -17,7 +18,11 @@ function App() {
 
   return (
     <div className="App bg-[#0e111bfa]  min-h-[100vh]">
-      
+      <div className="pt-20 img flex-col flex items-center  justify-center gap-5">
+      <Image className="hidden md:flex w-30 h-20" src="https://paghmankabob.com/wp-content/uploads/2024/11/logo-done.png"/>
+      <Image className="md:hidden flex w-30 h-22 px-10" src="https://paghmankabob.com/wp-content/uploads/2024/11/logo-m-1.png"/>
+        <Image className="hidden md:flex w-35 h-10 md:w-30 h-20" src="https://paghmankabob.com/wp-content/uploads/2024/11/HEADER.png"/>
+      </div>
       {/* tabs component */}
       <Tabs 
         fullMenu = {fullMenu}

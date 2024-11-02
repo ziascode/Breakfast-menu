@@ -21,7 +21,7 @@ const [selected, setSelected] = useState('Select');
 
   return (
     <>
-    <div className='bg-[#13161f] pt-32 pb-12 flex justify-center space-x-2'>
+    <div className='bg-[#13161f] pt-14 pb-12 flex justify-center space-x-2'>
       
       
       <div className='hidden tabs md:flex justify-center space-x-2 text-white '>
